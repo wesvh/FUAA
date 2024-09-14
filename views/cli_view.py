@@ -17,7 +17,9 @@ class CLIView:
     @staticmethod
     def mostrar_menu():
         CLIView.limpiar_consola()
-        print("Sistema de Ahorro CLI")
+        print(
+            "Sistema de Ahorro CLI \n Esteban Villada Henao grupo 202460-6A - 62 \n Cristian Murillo Soto 202460-6A - 61 "
+        )
         print("1. Registrar Usuario")
         print("2. Crear Cuenta")
         print("3. Mostrar Usuarios")
