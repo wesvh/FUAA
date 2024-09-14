@@ -42,8 +42,14 @@ class CuentaAhorros(Cuenta):
         super().__init__(id_cuenta, fecha_apertura, monto_apertura, usuario)
         self.tipo_cuenta = "Ahorros"
 
+    def mostrar_informacion(self):
+        return f"Tipo de cuenta: Ahorros \n" + super().mostrar_informacion()
+
 
 class CuentaCorriente(Cuenta):
     def __init__(self, id_cuenta, fecha_apertura, monto_apertura, usuario):
         super().__init__(id_cuenta, fecha_apertura, monto_apertura, usuario)
         self.tipo_cuenta = "Corriente"
+
+    def mostrar_informacion(self):
+        return f"Tipo de cuenta: Corriente \n" + super().mostrar_informacion()
