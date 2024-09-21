@@ -31,6 +31,9 @@ def crear_cuenta(
     usuarios = user_controller.obtener_usuarios()
     if usuarios:
         usuario = cli_view.seleccionar_usuario(usuarios)
+        if not usuario:
+            cli_view.mostrar_mensaje("Error: Usuario no válido.")
+            return
         id_cuenta, tipo_cuenta, monto_apertura = cli_view.solicitar_datos_cuenta(
             usuario
         )
